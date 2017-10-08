@@ -2,14 +2,14 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Barbershop</title>
+    <title>Barbershop Borodinski</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
    <header class="main-header">
         <div class="container">
-            <nav class="main-nav">
-                <ul>
+            <nav>
+                <ul class="main-nav">
                     <li>
                         <a href="barbershop-index.html"><img class="nav-logo" src="img/nav-logo.png" alt="Barbershop"></a>
                     </li>
@@ -20,7 +20,7 @@
                         <a href="#">Новости</a>
                     </li>
                     <li>
-                        <a href="#">Прайс-лист</a>
+                        <span class="nav-active">Прайс-лист</span>
                     </li>
                     <li>
                         <a href="#">Магазин</a>
@@ -37,75 +37,80 @@
     </header>
     
     <main class="container">
-    	<h1>Прайс-лист</h1>
-        <div class="breadcrumbs">
-            <a class="breadcrumbs-previous" href="barbershop-index.html">Главная</a>
-            <span class="breadcrumbs-current">Прайс-лист</span>
-        </div>
+    
+    	<section class="page-header">
+			<h1 class="page-header-title">Прайс-лист</h1>
+			<ul class="breadcrumbs">
+				<li>
+					<a class="breadcrumbs-previous" href="barbershop-index.html">Главная</a>
+				</li>
+				<li>
+					<span class="breadcrumbs-current">Прайс-лист</span>
+				</li>
+			</ul>
+        </section>
+        
         <div class="page-title">
         	<span class="page-title-text">Истинно мужская классика</span>
         </div>
-        <div class="company-benefits">
-        	<article class="company-partners">
-        		<h3>Мы используем только лучшие средства:</h3>
-        		<ul>
-        			<li>Baxter of California</li>
-        			<li>Mr Natty</li>
-        			<li>Suavecito</li>
-        			<li>Malin+Goetz</li>
-        		</ul>
-        	</article>
-        </div>
-        <div class="company-benefits">
-        	<article class="company-prices">
-        		<h3>Цены на услуги наших мастеров:</h3>
-        		<table>
-        			<tr>
-        				<td>Стрижка</td>
-        				<td>1 500 р.</td>
-        			</tr>
-        			<tr>
-        				<td>Стрижка бороды</td>
-        				<td>500 р.</td>
-        			</tr>
-        			<tr>
-        				<td>Накрутка усов</td>
-        				<td>350 р.</td>
-        			</tr>
-        		</table>
-        	</article>
-        </div>
-        <div class="company-benefits">
-        	<article class="company-mission">
-        		<h3>Несколько слов о нас:</h3>
-        		<p>Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас - это уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество.</p>
-        	</article>
-        </div>
-        <div class="company-benefits">
-        	<article class="company-priority">
-        		<h3></h3>
-        		<p>Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и свободно!</p>
-        	</article>
-        </div>
+        
+        <article class="company-benefits company-benefits-partners">
+			<h3 class="benefits-title">Мы используем только лучшие средства:</h3>
+			<ul>
+				<li>Baxter of California</li>
+				<li>Mr Natty</li>
+				<li>Suavecito</li>
+				<li>Malin+Goetz</li>
+			</ul>
+		</article>
+        
+        <article class="company-benefits company-benefits-prices">
+			<h3 class="benefits-title">Цены на услуги наших мастеров:</h3>
+			<table>
+				<tr>
+					<td>Стрижка</td>
+					<td>1 500 р.</td>
+				</tr>
+				<tr>
+					<td>Стрижка бороды</td>
+					<td>500 р.</td>
+				</tr>
+				<tr>
+					<td>Накрутка усов</td>
+					<td>350 р.</td>
+				</tr>
+			</table>
+		</article>
+        
+        <article class="company-benefits company-benefits-about">
+			<h3 class="benefits-title">Несколько слов о нас:</h3>
+			<p>Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас - это уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество.</p>
+		</article>
+        
+        <article class="company-benefits company-benefits-preferenses">
+			<h3 class="benefits-title"></h3>
+			<p>Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и свободно!</p>
+		</article>
+        
     </main>
    
     <footer class="main-footer">
-        <div class="container">
+        <div class="container clearfix">
             <div class="footer-contacts">
-                Барбершоп «Бородинский»<br>
-                Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-                <a href="#">Как нас найти</a><br>
-                Телефон: +7 (495) 666-02-66
+                <p class="footer-text">Барбершоп «Бородинский»<br>
+                    Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+                    <a class="link-map" href="#">Как нас найти?</a><br>
+                    Телефон: +7 (495) 666-02-66</p>
             </div>
             <div class="footer-social">
-                <p>Давайте дружить!</p>
-                <a class="social-btn" href="img/icon_vk.png">ВК</a>
-                <a class="social-btn" href="img/icon_fb.png">ФБ</a>
-                <a class="social-btn" href="img/icon_ig.png">ИГ</a>
+                <p class="footer-text">Давайте дружить!</p>
+                <a class="btn btn-social" href="img/icon_vk.png">ВК</a>
+                <a class="btn btn-social" href="img/icon_fb.png">ФБ</a>
+                <a class="btn btn-social" href="img/icon_ig.png">ИГ</a>
             </div>
             <div class="footer-developer">
-                <p>Разработано:</p>
-                <a class="btn" href="http://www.htmlacademy.ru">htmlacademy.ru</a>
+                <p class="footer-text">Разработано:</p>
+                <a class="btn btn-developer" href="http://www.htmlacademy.ru">htmlacademy.ru</a>
             </div>
         </div>
     </footer>

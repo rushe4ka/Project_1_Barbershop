@@ -2,14 +2,14 @@
 <html lang="ru">
 <head>
 <meta charset="UTF-8">
-<title>Barbershop</title>
+<title>Barbershop Borodinski</title>
 <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 	<header class="main-header">
 		<div class="container">
-			<nav class="main-nav">
-				<ul>
+			<nav class="btn">
+				<ul class="main-nav">
 					<li>
 						<a href="barbershop-index.html"><img class="nav-logo" src="img/nav-logo.png" alt="Barbershop"></a>
 					</li>
@@ -37,71 +37,87 @@
 	</header>
 
 	<main class="container">
-		<h1>Средства для ухода</h1>
-		<div class="breadcrumbs">
-			<a class="breadcrumbs-previous" href="barbershop-index.html">Главная</a>
-			<a class="breadcrumbs-previous" href="#">Магазин</a>
-			<span class="breadcrumbs-current">Средства для ухода</span>
-		</div>
+	
+		<section class="page-header">
+			<h1 class="page-header-title">Средства для ухода</h1>
+			<ul class="breadcrumbs">
+				<li>
+					<a class="breadcrumbs-previous" href="barbershop-index.html">Главная</a>
+				</li>
+				<li>
+					<a class="breadcrumbs-previous" href="#">Магазин</a>
+				</li>
+				<li>
+					<span class="breadcrumbs-current">Средства для ухода</span>
+				</li>
+			</ul>
+		</section>
+<!-- Форма для выбора внутри каталога -->
 		<aside class="catalog-selection">
 			<form action="">
+			
 				<fieldset class="catalog-form">
 					<legend  class="form-title">Производители:</legend>
 					<div class="form-item">
-						<input type="checkbox" name="produce" id="baxter" checked>
+						<input type="checkbox" name="baxter" id="baxter" checked>
 						<label for="baxter">Baxter of California</label>
 					</div>
 					<div class="form-item">
-						<input type="checkbox" name="produce" id="natty">
+						<input type="checkbox" name="natty" id="natty">
 						<label for="natty">Mr Natty</label>
 					</div>
 					<div class="form-item">
-						<input type="checkbox" name="produce" id="sua" checked>
+						<input type="checkbox" name="sua" id="sua" checked>
 						<label for="sua">Suavecito</label>
 					</div>
 					<div class="form-item">
-						<input type="checkbox" name="produce" id="malin">
+						<input type="checkbox" name="malin" id="malin">
 						<label for="malin">Malin+Goetz</label>
 					</div>
 					<div class="form-item">
-						<input type="checkbox" name="produce" id="murray">
+						<input type="checkbox" name="murray" id="murray">
 						<label for="murray">Murray's</label>
 					</div>
 					<div class="form-item">
-						<input type="checkbox" name="produce" id="american" checked>
+						<input type="checkbox" name="american" id="american" checked>
 						<label for="american">American Crew</label>
 					</div>
 				</fieldset>
+				
 				<fieldset class="catalog-form">
 					<legend class="form-title">Группы товаров:</legend>
 					<div class="form-item">
-						<input type="radio" name="catalog-group" id="shaving">
+						<input type="radio" name="catalog-group" id="shaving" value="shaving">
 						<label for="shaving">Бритвенные принадлежности</label>
 					</div>
 					<div class="form-item">
-						<input type="radio" name="catalog-group" id="care" checked>
+						<input type="radio" name="catalog-group" id="care" value="care" checked>
 						<label for="care">Средства для ухода</label>
 					</div>
 					<div class="form-item">
-						<input type="radio" name="catalog-group" id="accessories">
+						<input type="radio" name="catalog-group" id="accessories" value="accessories">
 						<label for="accessories">Аксессуары</label>
 					</div>
 				</fieldset>
-				<button type="submit" class="btn">Показать</button>
+				
+				<button class="btn btn-show" type="submit">Показать</button>
 			</form>
 		</aside>
+<!-- Каталог -->
 		<section class="products">
+		
 			<figure class="product-teaser">
 				<a href="barbershop-item.html">
 					<img src="img/teaser_baxter_set_travel.jpg" alt="Набор для путешествий" width="220" height="165"></a>
 				<a href="barbershop-item.html">
-					<p class="product-teaser-title">Набор для путешествий<span>&laquo;Baxter of California&raquo;</span></p>
+					<p class="product-teaser-title">Набор для путешествий <span>&laquo;Baxter of California&raquo;</span></p>
 				</a>
 				<div class="item-price">
 					<span class="price">2 900 руб.</span>
-					<a class="price-buy" href="#">Купить</a>
+					<a class="btn btn-buy" href="#">Купить</a>
 				</div>
 			</figure>
+			
 			<figure class="product-teaser">
 				<a href="#">
 					<img src="img/teaser_baxter_conditioner.jpg" alt="Увлажняющий кондиционер" width="220" height="165"></a>
@@ -110,9 +126,10 @@
 				</a>
 				<div class="item-price">
 					<span class="price">750 руб.</span>
-					<a class="price-buy" href="#">Купить</a>
+					<a class="btn btn-buy" href="#">Купить</a>
 				</div>
 			</figure>
+			
 			<figure class="product-teaser">
 				<a href="#">
 					<img src="img/teaser_sua_gel.jpg" alt="Гель для волос" width="220" height="165"></a>
@@ -121,9 +138,10 @@
 				</a>
 				<div class="item-price">
 					<span class="price">290 руб.</span>
-					<a class="price-buy" href="#">Купить</a>
+					<a class="btn btn-buy" href="#">Купить</a>
 				</div>
 			</figure>
+			
 			<figure class="product-teaser">
 				<a href="#">
 					<img src="img/teaser_american_clay.jpg" alt="Глина для укладки волос" width="220" height="165"></a>
@@ -132,9 +150,10 @@
 				</a>
 				<div class="item-price">
 					<span class="price">500 руб.</span>
-					<a class="price-buy" href="#">Купить</a>
+					<a class="btn btn-buy" href="#">Купить</a>
 				</div>
 			</figure>
+			
 			<figure class="product-teaser">
 				<a href="#">
 					<img src="img/teaser_american_gel.jpg" alt="Гель для волос" width="220" height="165"></a>
@@ -143,9 +162,10 @@
 				</a>
 				<div class="item-price">
 					<span class="price">300 руб.</span>
-					<a class="price-buy" href="#">Купить</a>
+					<a class="btn btn-buy" href="#">Купить</a>
 				</div>
 			</figure>
+			
 			<figure class="product-teaser">
 				<a href="#">
 					<img src="img/teaser_baxter_set_shave.jpg" alt="Набор для бритья" width="220" height="165"></a>
@@ -154,37 +174,39 @@
 				</a>
 				<div class="item-price">
 					<span class="price">3 900 руб.</span>
-					<a class="price-buy" href="#">Купить</a>
+					<a class="btn btn-buy" href="#">Купить</a>
 				</div>
 			</figure>
+			
 			<div class="paginator">
-				<a href="#">1</a>
-				<span class="active">2</span>
-				<a href="#">3</a>
-				<a href="#">4</a>
+				<a class="btn btn-page" href="#">1</a>
+				<span class="page-active">2</span>
+				<a class="btn btn-page" href="#">3</a>
+				<a class="btn btn-page" href="#">4</a>
 			</div>
 		</section>
+		
 	</main>
 
 	<footer class="main-footer">
-		<div class="container">
-			<div class="footer-contacts">
-				Барбершоп «Бородинский»<br>
-				Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-				<a href="#">Как нас найти</a><br>
-				Телефон: +7 (495) 666-02-66
-			</div>
-			<div class="footer-social">
-				<p>Давайте дружить!</p>
-				<a class="social-btn" href="img/icon_vk.png">ВК</a>
-				<a class="social-btn" href="img/icon_fb.png">ФБ</a>
-				<a class="social-btn" href="img/icon_ig.png">ИГ</a>
-			</div>
-			<div class="footer-developer">
-				<p>Разработано:</p>
-				<a class="btn" href="http://www.htmlacademy.ru">htmlacademy.ru</a>
-			</div>
-		</div>
-	</footer>
+        <div class="container clearfix">
+            <div class="footer-contacts">
+                <p class="footer-text">Барбершоп «Бородинский»<br>
+                    Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+                    <a class="link-map" href="#">Как нас найти?</a><br>
+                    Телефон: +7 (495) 666-02-66</p>
+            </div>
+            <div class="footer-social">
+                <p class="footer-text">Давайте дружить!</p>
+                <a class="btn btn-social" href="img/icon_vk.png">ВК</a>
+                <a class="btn btn-social" href="img/icon_fb.png">ФБ</a>
+                <a class="btn btn-social" href="img/icon_ig.png">ИГ</a>
+            </div>
+            <div class="footer-developer">
+                <p class="footer-text">Разработано:</p>
+                <a class="btn btn-developer" href="http://www.htmlacademy.ru">htmlacademy.ru</a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
